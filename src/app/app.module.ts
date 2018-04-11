@@ -7,7 +7,7 @@ import { IndexComponent } from './components/index/index.component';
 import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 import { appRoutes } from './routerConfig';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,8 +18,8 @@ import { appRoutes } from './routerConfig';
   ],
   imports: [
     BrowserModule,
-    RouterModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
